@@ -1,0 +1,33 @@
+# server
+server:
+  port: 8888
+
+# spring
+spring:
+  application:
+    name: epoch-gateway
+
+# actuator端点开放规则
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: env,beans
+
+# zuul
+zuul:
+  sensitive-headers:
+  routes:
+    epoch-system:
+      path: /system/**
+      serviceId: epoch-system
+    epoch-hr:
+      path: /hr/**
+      serviceId: epoch-hr
+    epoch-auth:
+      path: /auth/**
+      serviceId: epoch-auth
+    epoch-test:
+      path: /test/**
+      serviceId: epoch-test
