@@ -72,6 +72,7 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
             <version>${security.version}</version>
+            <optional>true</optional>
         </dependency>
 
         <!--  pagehelper  -->
@@ -79,6 +80,7 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
             <version>5.1.8</version>
+            <optional>true</optional>
         </dependency>
 
         <!-- apache commons -->
