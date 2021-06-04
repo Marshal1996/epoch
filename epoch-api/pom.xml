@@ -18,7 +18,7 @@
 
     <properties>
         <spring-web.version>5.2.2.RELEASE</spring-web.version>
-        <hibernate-validator.version>6.1.1.Final</hibernate-validator.version>
+        <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
         <persistence-api.version>1.0</persistence-api.version>
         <jackson-annotations.version>2.10.0</jackson-annotations.version>
     </properties>
